@@ -4,16 +4,6 @@ def yrange(n):
         yield i
         i += 1
 
-y= yrange(5)
-print (y.next())
-
-print (y.next())
-
-print (y.next())
-
-print (y.next())
-
-
-print (y.next())
-
-print (y.next())
+y= yrange(10)
+for value in yrange(10):
+     print(y.next())
