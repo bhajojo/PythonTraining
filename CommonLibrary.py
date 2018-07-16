@@ -1,4 +1,4 @@
-from robot.libraries.BuiltIn import BuiltIn
+from robot.libraries.BuiltIn import BuiltIn #import buitlin library
 from robot.libraries.Screenshot import Screenshot
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
@@ -65,7 +65,7 @@ class CommonLibrary:
         def click_element_using_javascript(self,locator,n=1):
                     """Returns 'True' if the element clciking by Java Script with the 'locator' in the corresponding page else returns 'False' """
 
-                    selenium = BuiltIn().get_library_instance('Selenium2Library')
+                        selenium = BuiltIn().get_library_instance('Selenium2Library')
                     try:
                         elements = selenium._element_find(locator,False,True)
                         selenium._current_browser().execute_script("arguments[0].click();", elements[n-1])
